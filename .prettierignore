@@ -2,7 +2,6 @@ lib
 dist
 docs
 app
-ui
 cache/*
 
 *.bak

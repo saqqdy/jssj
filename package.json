@@ -1,6 +1,6 @@
 {
-	"name": "fille",
-	"description": "vue开发者平台",
+	"name": "@fille/monorepo",
+	"description": "fillejs",
 	"version": "1.0.0",
 	"scripts": {
 		"eslint": "eslint --fix --ext .vue,.js",
@@ -15,16 +15,25 @@
 		"fille": "bin/fille.js"
 	},
 	"dependencies": {
-		"regenerator-runtime": "0.13.7"
 	},
 	"devDependencies": {
-		"@babel/cli": "7.10.5",
-		"@babel/core": "7.11.1",
-		"@babel/preset-env": "7.11.0",
-		"eslint": "7.6.0",
-		"jsdoc-to-markdown": "^6.0.1",
-		"prettier": "^2.0.5",
-		"uglify-js": "^3.10.1"
+        "@types/node": "^16.11.10",
+        "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "@typescript-eslint/parser": "^5.4.0",
+        "consola": "^2.15.3",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.3.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-sets": "^1.5.3",
+        "eslint-plugin-tsdoc": "^0.2.14",
+        "esno": "^0.12.1",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.5.0",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.4.0",
+        "typedoc": "^0.22.10",
+        "typedoc-plugin-markdown": "^3.11.7",
+        "typescript": "^4.5.2"
 	},
 	"repository": {
 		"type": "git",

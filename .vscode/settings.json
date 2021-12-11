@@ -14,7 +14,8 @@
         "esbuild",
         "pnpm",
         "cnpm",
-        "consola"
+        "consola",
+        "jssj"
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.codeActionsOnSave": {

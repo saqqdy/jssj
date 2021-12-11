@@ -1,5 +1,5 @@
 {
-    "name": "@fille/core",
+    "name": "@jssj/core",
     "description": "git master core",
     "version": "1.0.0-beta.0",
     "scripts": {
@@ -26,22 +26,22 @@
         "typings": "typings"
     },
     "devDependencies": {
-        "@fille/go": "workspace:*",
-        "@fille/utils": "workspace:*"
+        "@jssj/go": "workspace:*",
+        "@jssj/utils": "workspace:*"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/saqqdy/fille.git"
+        "url": "git+https://github.com/saqqdy/jssj.git"
     },
     "keywords": [
-        "fille",
+        "jssj",
         "git",
         "tool"
     ],
     "author": "saqqdy<www.saqqdy.com>",
     "license": "GPL-3.0",
     "bugs": {
-        "url": "https://github.com/saqqdy/fille/issues"
+        "url": "https://github.com/saqqdy/jssj/issues"
     },
-    "homepage": "https://www.saqqdy.com/fille"
+    "homepage": "https://www.saqqdy.com/jssj"
 }

@@ -1,6 +1,6 @@
 {
-	"name": "@fille/monorepo",
-	"description": "fillejs",
+	"name": "@jssj/monorepo",
+	"description": "jssj",
 	"version": "1.0.0",
 	"scripts": {
 		"eslint": "eslint --fix --ext .vue,.js",
@@ -12,7 +12,7 @@
 	},
 	"main": "index.js",
 	"bin": {
-		"fille": "bin/fille.js"
+		"jssj": "bin/jssj.js"
 	},
 	"dependencies": {
 	},
@@ -37,17 +37,17 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/saqqdy/fille.git"
+		"url": "git+https://github.com/saqqdy/jssj.git"
 	},
 	"keywords": [
-		"fille",
+		"jssj",
 		"vue",
 		"vue3.0"
 	],
 	"author": "saqqdy.com",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/saqqdy/fille/issues"
+		"url": "https://github.com/saqqdy/jssj/issues"
 	},
-	"homepage": "https://github.com/saqqdy/fille#readme"
+	"homepage": "https://github.com/saqqdy/jssj#readme"
 }

@@ -1,0 +1,46 @@
+{
+    "name": "@jssj/concurrent",
+    "description": "nodejs concurrent",
+    "version": "1.0.0-beta.0",
+    "scripts": {
+    },
+    "main": "index.js",
+    "bin": {
+        "gitm-concurrent": "lib/index.js"
+    },
+    "files": [
+        "app",
+        "cache",
+        "lib",
+        "typings"
+    ],
+    "directories": {
+        "app": "app",
+        "bin": "bin",
+        "es": "es",
+        "lib": "lib",
+        "src": "src",
+        "cache": "cache",
+        "server": "server",
+        "ui": "ui",
+        "typings": "typings"
+    },
+    "devDependencies": {
+        "@jssj/utils": "workspace:*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saqqdy/jssj.git"
+    },
+    "keywords": [
+        "jssj",
+        "git",
+        "tool"
+    ],
+    "author": "saqqdy<www.saqqdy.com>",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/saqqdy/jssj/issues"
+    },
+    "homepage": "https://www.saqqdy.com/jssj"
+}

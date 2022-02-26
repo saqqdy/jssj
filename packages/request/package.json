@@ -2,8 +2,7 @@
     "name": "@jssj/request",
     "description": "nodejs request function",
     "version": "1.0.0-beta.0",
-    "scripts": {
-    },
+    "scripts": {},
     "main": "index.js",
     "bin": {
         "gitm-request": "lib/index.js"
@@ -24,6 +23,10 @@
         "server": "server",
         "ui": "ui",
         "typings": "typings"
+    },
+    "dependencies": {
+        "js-cool": "^2.3.1",
+        "qs": "^6.10.3"
     },
     "devDependencies": {
         "@jssj/utils": "workspace:*"

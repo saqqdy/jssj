@@ -4,8 +4,6 @@ const zlib = require('zlib')
 const { URL } = require('url')
 const qs = require('qs')
 const getType = require('js-cool/lib/getType')
-const { debug } = require('./utils/debug')
-const { version: GITMARS_VERSION } = require('../../package.json')
 
 export type RequestHeadersType = {
     Host?: string
@@ -47,8 +45,7 @@ class Request {
             // 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,es;q=0.2',
             // Accept: 'text/html,application/xhtml+xml,application/json,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'User-Agent':
-                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Gitmars/' +
-                GITMARS_VERSION
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Gitmars/'
         }
         if (this.cookies.length) {
             headers.Cookie = this.cookies.join('; ')
@@ -129,11 +126,6 @@ class Request {
                         } catch {
                             // console.warn('data is not json', data)
                         }
-                        debug(
-                            'request-result',
-                            { method, url, postData, headers, options },
-                            data
-                        )
                         if (
                             /<html>/.test(data) ||
                             (getType(data) === 'object' &&

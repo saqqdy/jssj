@@ -15,7 +15,9 @@
         "pnpm",
         "cnpm",
         "consola",
-        "jssj"
+        "jssj",
+        "tsnd",
+        "tsup"
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.codeActionsOnSave": {

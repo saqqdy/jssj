@@ -1,7 +1,7 @@
 {
     "name": "@jssj/docs",
     "description": "git master docs",
-    "version": "1.0.0-beta.0",
+    "version": "1.0.0-alpha.1",
     "scripts": {
     },
     "main": "index.js",

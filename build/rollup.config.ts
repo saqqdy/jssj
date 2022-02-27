@@ -12,7 +12,7 @@ import {
     minifyBanner,
     injectJssjCore
 } from './rollup-plugins'
-// import config from './config'
+import { banner } from './config'
 
 import type { OutputOptions, RollupOptions } from 'rollup'
 
@@ -34,23 +34,8 @@ for (const {
     target
 } of packages) {
     if (build === false) continue
-    const pkg = require(`packages/${name}/package.json`)
+    // const pkg = require(`packages/${name}/package.json`)
     // const deps = Object.keys(pkg.dependencies || {})
-    const banner =
-        '/*!\n' +
-        ' * ' +
-        pkg.name +
-        ' v' +
-        pkg.version +
-        '\n' +
-        ' * ' +
-        pkg.description +
-        '\n' +
-        ' * (c) 2021-' +
-        new Date().getFullYear() +
-        ' saqqdy \n' +
-        ' * Released under the MIT License.\n' +
-        ' */'
     const iifeGlobals = {
         'js-cool': 'JsCool',
         '@jssj/utils': 'Jssj',

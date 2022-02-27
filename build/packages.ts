@@ -30,20 +30,20 @@ export const packages: PackageManifest[] = [
     //     external: [],
     //     iife: false
     // },
-    // {
-    //     name: 'request',
-    //     display: 'Request',
-    //     description: 'jssj request module',
-    //     author: 'saqqdy<https://github.com/saqqdy>',
-    //     // manualImport: true,
-    //     // addon: true,
-    //     // iife: false,
-    //     // cjs: false,
-    //     submodules: true,
-    //     target: 'node14',
-    //     external: ['@jssj/core']
-    //     // globals: {
-    //     //   'vue-router': 'VueRouter',
-    //     // },
-    // }
+    {
+        name: 'request',
+        display: 'Request',
+        description: 'jssj request module',
+        author: 'saqqdy<https://github.com/saqqdy>',
+        // manualImport: true,
+        // addon: true,
+        // iife: false,
+        // cjs: false,
+        submodules: true,
+        target: 'node14',
+        external: ['@jssj/core']
+        // globals: {
+        //   'vue-router': 'VueRouter',
+        // },
+    }
 ]

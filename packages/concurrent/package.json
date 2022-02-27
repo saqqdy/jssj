@@ -1,7 +1,7 @@
 {
     "name": "@jssj/concurrent",
     "description": "nodejs concurrent",
-    "version": "1.0.0-beta.0",
+    "version": "1.0.0-alpha.1",
     "scripts": {},
     "main": "index.js",
     "bin": {

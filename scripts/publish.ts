@@ -9,6 +9,7 @@ import { packages } from '../build/packages'
 let command = 'npm publish --access public'
 
 if (version.includes('beta')) command += ' --tag beta'
+if (version.includes('alpha')) command += ' --tag alpha'
 
 for (const { name } of packages) {
     execSync(command, {

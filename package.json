@@ -1,14 +1,17 @@
 {
     "name": "@jssj/monorepo",
     "description": "jssj",
-    "version": "1.0.0",
+    "version": "1.0.0-alpha.1",
     "scripts": {
         "eslint": "eslint --fix --ext .vue,.js",
         "prettier": "npx prettier --write ./",
         "lib": "sh scripts/lib.sh",
         "docs": "sh scripts/docs.sh --docs",
         "push": "tscjs scripts/push.ts",
-        "pub": "tscjs scripts/publish.ts"
+        "build": "tscjs scripts/build.ts",
+        "build:rollup": "cross-env NODE_OPTIONS=\"--max-old-space-size=6144\" rollup -c",
+        "pub": "tscjs scripts/publish.ts",
+        "clean": "rimraf dist types typings packages/*/dist"
     },
     "main": "index.js",
     "bin": {

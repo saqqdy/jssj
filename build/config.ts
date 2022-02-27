@@ -1,15 +1,10 @@
 const path = require('path')
-const fs = require('fs')
-const pkg = require('./package.json')
 // const nodeExternals = require('webpack-node-externals')
 let externals = {}
 
 // externals = [Object.assign({}, externals), nodeExternals() /*, /^core-js\/.+$/, /^js-cool\/.+$/*/]
 
-exports.externals = externals
-exports.version = pkg.version
-
-exports.extensions = [
+const extensions = [
     '.js',
     '.jsx',
     '.ts',
@@ -21,9 +16,16 @@ exports.extensions = [
     '.json'
 ]
 
-exports.alias = {
+const alias = {
     '@': path.resolve(__dirname, '../src'),
-    postmessager: path.resolve(__dirname, './')
+    jssj: path.resolve(__dirname, './')
 }
 
-exports.jsexclude = /node_modules/
+const jsexclude = /node_modules/
+
+export default {
+    externals,
+    extensions,
+    alias,
+    jsexclude
+}

@@ -1,9 +1,7 @@
-lib
-dist
-docs
-app
-ui
-cache/*
+/lib
+/es
+/dist
+/docs
 
 *.bak
 *_bak

@@ -1,5 +1,5 @@
 class Worker {
-	constructor(options) {
+    constructor(options) {
         //
     }
 }

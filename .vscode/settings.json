@@ -18,7 +18,9 @@
         "jssj",
         "tsnd",
         "tsup",
-        "iife"
+        "iife",
+        "tscjs",
+        "tsesm"
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.codeActionsOnSave": {

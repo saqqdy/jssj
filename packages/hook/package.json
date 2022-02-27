@@ -2,8 +2,7 @@
     "name": "@jssj/hook",
     "description": "git master hook",
     "version": "1.0.0-beta.0",
-    "scripts": {
-    },
+    "scripts": {},
     "main": "index.js",
     "bin": {
         "gitm-hook": "index.js"

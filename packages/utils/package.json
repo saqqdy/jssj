@@ -1,13 +1,9 @@
 {
     "name": "@jssj/utils",
-    "description": "git master go",
+    "description": "js utils",
     "version": "1.0.0-beta.0",
-    "scripts": {
-    },
+    "scripts": {},
     "main": "index.js",
-    "bin": {
-        "gitm-utils": "index.js"
-    },
     "files": [
         "app",
         "cache",
@@ -15,14 +11,10 @@
         "typings"
     ],
     "directories": {
-        "app": "app",
         "bin": "bin",
         "es": "es",
         "lib": "lib",
         "src": "src",
-        "cache": "cache",
-        "server": "server",
-        "ui": "ui",
         "typings": "typings"
     },
     "devDependencies": {

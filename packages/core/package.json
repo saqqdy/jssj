@@ -2,8 +2,7 @@
     "name": "@jssj/core",
     "description": "git master core",
     "version": "1.0.0-beta.0",
-    "scripts": {
-    },
+    "scripts": {},
     "main": "index.js",
     "bin": {
         "gitm-core": "index.js"

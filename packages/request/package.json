@@ -4,24 +4,17 @@
     "version": "1.0.0-beta.0",
     "scripts": {},
     "main": "index.js",
-    "bin": {
-        "gitm-request": "lib/index.js"
-    },
     "files": [
-        "app",
-        "cache",
+        "dist",
         "lib",
+        "es",
         "typings"
     ],
     "directories": {
-        "app": "app",
         "bin": "bin",
         "es": "es",
         "lib": "lib",
         "src": "src",
-        "cache": "cache",
-        "server": "server",
-        "ui": "ui",
         "typings": "typings"
     },
     "dependencies": {

@@ -1,7 +1,7 @@
 {
     "name": "@jssj/core",
     "description": "git master core",
-    "version": "1.0.0-alpha.2",
+    "version": "1.0.0-alpha.3",
     "exports": {
         ".": {
             "import": "./index.mjs",
@@ -17,12 +17,6 @@
     "bin": {
         "gitm-core": "index.js"
     },
-    "files": [
-        "dist",
-        "lib",
-        "es",
-        "typings"
-    ],
     "directories": {
         "bin": "bin",
         "es": "es",

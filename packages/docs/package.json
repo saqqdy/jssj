@@ -1,7 +1,7 @@
 {
     "name": "@jssj/docs",
     "description": "git master docs",
-    "version": "1.0.0-alpha.2",
+    "version": "1.0.0-alpha.3",
     "exports": {
         ".": {
             "import": "./index.mjs",
@@ -14,12 +14,6 @@
     "module": "./index.mjs",
     "types": "./index.d.ts",
     "scripts": {},
-    "files": [
-        "dist",
-        "lib",
-        "es",
-        "typings"
-    ],
     "directories": {
         "bin": "bin",
         "es": "es",

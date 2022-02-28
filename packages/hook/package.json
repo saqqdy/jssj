@@ -1,7 +1,7 @@
 {
     "name": "@jssj/hook",
     "description": "git master hook",
-    "version": "1.0.0-alpha.2",
+    "version": "1.0.0-alpha.3",
     "exports": {
         ".": {
             "import": "./index.mjs",
@@ -17,12 +17,6 @@
     "bin": {
         "gitm-hook": "index.js"
     },
-    "files": [
-        "dist",
-        "lib",
-        "es",
-        "typings"
-    ],
     "directories": {
         "bin": "bin",
         "es": "es",

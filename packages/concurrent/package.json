@@ -1,32 +1,39 @@
 {
     "name": "@jssj/concurrent",
     "description": "nodejs concurrent",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "require": "./index.cjs",
+            "types": "./index.d.ts"
+        },
+        "./*": "./*"
+    },
+    "main": "./index.cjs",
+    "module": "./index.mjs",
+    "types": "./index.d.ts",
     "scripts": {},
-    "main": "index.js",
     "bin": {
         "gitm-concurrent": "lib/index.js"
     },
     "files": [
-        "app",
-        "cache",
+        "dist",
         "lib",
+        "es",
         "typings"
     ],
     "directories": {
-        "app": "app",
         "bin": "bin",
         "es": "es",
         "lib": "lib",
         "src": "src",
-        "cache": "cache",
-        "server": "server",
-        "ui": "ui",
         "typings": "typings"
     },
     "devDependencies": {
         "@jssj/utils": "workspace:*"
     },
+    "sideEffects": false,
     "repository": {
         "type": "git",
         "url": "git+https://github.com/saqqdy/jssj.git"

@@ -27,12 +27,6 @@ async function buildMetaFiles() {
                 path.join(packageDist, 'README.md')
             )
 
-        if (name === 'core' || name === 'nuxt')
-            await promises.copyFile(
-                path.join(rootDir, 'indexes.json'),
-                path.join(packageDist, 'indexes.json')
-            )
-
         for (const file of FILES_COPY_ROOT)
             await promises.copyFile(
                 path.join(rootDir, file),

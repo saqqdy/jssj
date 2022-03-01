@@ -12,6 +12,7 @@
         "build:rollup": "cross-env NODE_OPTIONS=\"--max-old-space-size=6144\" rollup -c",
         "pub": "tscjs scripts/publish.ts",
         "update": "tscjs scripts/update.ts",
+        "dist": "pnpm run update && pnpm build",
         "clean": "rimraf dist types typings packages/*/dist"
     },
     "main": "index.js",

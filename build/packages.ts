@@ -37,7 +37,7 @@ export const packages: PackageManifest[] = [
         author: 'saqqdy<https://github.com/saqqdy>',
         // manualImport: true,
         // addon: true,
-        // iife: false,
+        iife: false,
         // cjs: false,
         submodules: true,
         target: 'node14',

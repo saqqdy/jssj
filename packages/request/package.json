@@ -1,7 +1,7 @@
 {
     "name": "@jssj/request",
-    "description": "nodejs request function",
-    "version": "1.0.0-alpha.3",
+    "description": "jssj request module",
+    "version": "1.0.0-alpha.4",
     "exports": {
         ".": {
             "import": "./index.mjs",
@@ -31,17 +31,18 @@
     "sideEffects": false,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/saqqdy/jssj.git"
+        "url": "git+https://github.com/saqqdy/jssj.git",
+        "directory": "packages/request"
     },
     "keywords": [
         "jssj",
         "git",
         "tool"
     ],
-    "author": "saqqdy<www.saqqdy.com>",
+    "author": "saqqdy<https://github.com/saqqdy>",
     "license": "GPL-3.0",
     "bugs": {
         "url": "https://github.com/saqqdy/jssj/issues"
     },
-    "homepage": "https://www.saqqdy.com/jssj"
+    "homepage": "https://github.com/saqqdy/jssj/tree/master/packages/request#readme"
 }

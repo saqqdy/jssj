@@ -17,7 +17,6 @@
     "jsdelivr": "./index.iife.min.js",
     "scripts": {},
     "directories": {
-        "bin": "bin",
         "es": "es",
         "lib": "lib",
         "src": "src",

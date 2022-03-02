@@ -88,8 +88,8 @@ Please open an issue [here](https://github.com/saqqdy/@jssj/request/issues).
 [codecov-url]: https://codecov.io/github/saqqdy/@jssj/request?branch=master
 [download-image]: https://img.shields.io/npm/dm/@jssj/request.svg?style=flat-square
 [download-url]: https://npmjs.org/package/@jssj/request
-[gzip-image]: http://img.badgesize.io/https://unpkg.com/@jssj/request/lib/index.js?compression=gzip&label=gzip%20size:%20JS
-[gzip-url]: http://img.badgesize.io/https://unpkg.com/@jssj/request/lib/index.js?compression=gzip&label=gzip%20size:%20JS
+[gzip-image]: http://img.badgesize.io/https://unpkg.com/@jssj/request/index.cjs?compression=gzip&label=gzip%20size:%20JS
+[gzip-url]: http://img.badgesize.io/https://unpkg.com/@jssj/request/index.cjs?compression=gzip&label=gzip%20size:%20JS
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_@jssj/request

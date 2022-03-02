@@ -61,7 +61,7 @@
         "vue3.0"
     ],
     "author": "saqqdy.com",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/saqqdy/jssj/issues"
     },

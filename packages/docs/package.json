@@ -34,7 +34,7 @@
         "tool"
     ],
     "author": "saqqdy<www.saqqdy.com>",
-    "license": "GPL-3.0",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/saqqdy/jssj/issues"
     },

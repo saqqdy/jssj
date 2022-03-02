@@ -22,8 +22,8 @@ Please open an issue [here](https://github.com/saqqdy/@jssj/monorepo/issues).
 
 [npm-image]: https://img.shields.io/npm/v/@jssj/monorepo.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/@jssj/monorepo
-[codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/@jssj/monorepo.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/saqqdy/@jssj/monorepo?branch=master
+[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
+[codacy-url]: https://www.codacy.com/gh/saqqdy/@jssj/monorepo/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/@jssj/monorepo&utm_campaign=Badge_Grade
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_@jssj/monorepo

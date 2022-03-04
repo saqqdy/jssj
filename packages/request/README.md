@@ -90,7 +90,7 @@ Please open an issue [here](https://github.com/saqqdy/@jssj/request/issues).
 [download-url]: https://npmjs.org/package/@jssj/request
 [gzip-image]: http://img.badgesize.io/https://unpkg.com/@jssj/request/index.cjs?compression=gzip&label=gzip%20size:%20JS
 [gzip-url]: http://img.badgesize.io/https://unpkg.com/@jssj/request/index.cjs?compression=gzip&label=gzip%20size:%20JS
-[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_@jssj/request
 [sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_@jssj/request

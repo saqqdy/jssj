@@ -3,11 +3,13 @@ import type { PackageManifest } from './types'
 export const packages: PackageManifest[] = [
     {
         name: 'node',
+        iife: false,
         submodules: true,
         display: 'js utils for nodejs'
     },
     {
         name: 'utils',
+        iife: false,
         display: 'Shared utilities'
     },
     // {

@@ -12,6 +12,17 @@ A simplified http request client for nodejs
 
 </div>
 
+## Install
+
+```shell
+# by npm
+npm install -S @jssj/monorepo
+# by yarn
+yarn add @jssj/monorepo
+# by pnpm
+pnpm install @jssj/monorepo
+```
+
 ## Issues & Support
 
 Please open an issue [here](https://github.com/saqqdy/@jssj/monorepo/issues).

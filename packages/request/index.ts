@@ -5,6 +5,9 @@ const { URL } = require('url')
 const qs = require('qs')
 const getType = require('js-cool/lib/getType')
 
+import type { RequestOptions } from 'https'
+import type { IncomingMessage } from 'http'
+
 export type RequestHeadersType = {
     Host?: string
     rejectUnauthorized?: boolean
@@ -91,7 +94,7 @@ class Request {
         postData?: string,
         headers: RequestHeadersType = {},
         options: RequestOptionsType = {}
-    ) {
+    ): Promise<any> {
         const urlObj = new URL(url)
         headers = { ...this.getHeaders(urlObj.host, postData), ...headers }
         const params = {
@@ -104,7 +107,7 @@ class Request {
         return new Promise((resolve, reject) => {
             const req = (urlObj.protocol == 'http:' ? http : https).request(
                 params,
-                (res: any) => {
+                (res: IncomingMessage) => {
                     const chunks: any[] = []
                     res.on('data', (buffer: any) => {
                         // console.info(JSON.parse(Buffer.from(buffer).toString()))
@@ -113,7 +116,7 @@ class Request {
                     res.on('end', () => {
                         const buffer = Buffer.concat(chunks)
                         const encoding = res.headers['content-encoding']
-                        let data: any
+                        let data: string, result: any
                         if (encoding === 'gzip') {
                             data = zlib.gunzipSync(buffer).toString()
                         } else if (encoding === 'deflate') {
@@ -122,30 +125,32 @@ class Request {
                             data = buffer.toString()
                         }
                         try {
-                            data = JSON.parse(data)
+                            result = JSON.parse(data)
                         } catch {
+                            result = data
                             // console.warn('data is not json', data)
                         }
                         if (
-                            /<html>/.test(data) ||
-                            (getType(data) === 'object' &&
-                                (data.status === false ||
-                                    data.success === false))
+                            (typeof result === 'string' &&
+                                /<html>/.test(result)) ||
+                            (typeof result === 'object' &&
+                                (result.status === false ||
+                                    result.success === false))
                         ) {
                             if (options.error) {
                                 // 请求端自行处理error
-                                reject(data)
+                                reject(result)
                             } else {
                                 // 直接抛出异常
                                 console.error(
-                                    typeof data === 'object'
-                                        ? data.msg || data.message
-                                        : data
+                                    typeof result === 'object'
+                                        ? result.msg || result.message
+                                        : result
                                 )
                             }
                             return
                         }
-                        resolve(data)
+                        resolve(result)
                     })
                 }
             )

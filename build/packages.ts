@@ -3,12 +3,14 @@ import type { PackageManifest } from './types'
 export const packages: PackageManifest[] = [
     {
         name: 'node',
+		pkgName: '@jssj/node',
         iife: false,
         submodules: true,
         display: 'js utils for nodejs'
     },
     {
         name: 'utils',
+		pkgName: '@jssj/utils',
         iife: false,
         display: 'Shared utilities'
     },
@@ -39,6 +41,7 @@ export const packages: PackageManifest[] = [
     // },
     {
         name: 'request',
+		pkgName: '@jssj/request',
         display: 'Request',
         description: 'jssj request module',
         author: 'saqqdy<https://github.com/saqqdy>',

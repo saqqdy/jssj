@@ -1,7 +1,7 @@
 {
     "name": "@jssj/node",
     "description": "js utils for nodejs",
-    "version": "1.0.0-alpha.6",
+    "version": "1.0.0-alpha.7",
     "exports": {
         ".": {
             "import": "./index.mjs",

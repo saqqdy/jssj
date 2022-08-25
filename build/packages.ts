@@ -15,11 +15,6 @@ export const packages: PackageManifest[] = [
         display: 'Shared utilities'
     },
     // {
-    //     name: 'core',
-    //     display: 'Gitmars',
-    //     description: '这是一个git工作流工具'
-    // },
-    // {
     //     name: 'docs',
     //     display: 'Docs',
     //     description: 'Integration wrappers for utility libraries',

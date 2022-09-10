@@ -1,44 +1,44 @@
 {
-    "cSpell.words": [
-        "cnpm",
-        "consola",
-        "esbuild",
-        "gitm",
-        "Gitm",
-        "gitmars",
-        "iife",
-        "jssj",
-        "pnpm",
-        "saqqdy",
-        "tscjs",
-        "tsesm",
-        "tsnd",
-        "tsup",
-        "typedoc",
-        "unpub",
-        "unpublish"
-    ],
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "npm.packageManager": "yarn",
-    "eslint.probe": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "html",
-        "vue",
-        "markdown"
-    ],
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "html",
-        "vue",
-        "markdown"
-    ]
+	"cSpell.words": [
+		"cnpm",
+		"consola",
+		"esbuild",
+		"gitm",
+		"Gitm",
+		"gitmars",
+		"iife",
+		"jssj",
+		"pnpm",
+		"saqqdy",
+		"tscjs",
+		"tsesm",
+		"tsnd",
+		"tsup",
+		"typedoc",
+		"unpub",
+		"unpublish"
+	],
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"npm.packageManager": "yarn",
+	"eslint.probe": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue",
+		"markdown"
+	],
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue",
+		"markdown"
+	]
 }

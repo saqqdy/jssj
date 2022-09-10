@@ -15,14 +15,14 @@ import { readFileSync, writeFileSync } from 'fs'
  * @returns result - json | {}
  */
 export function readJSON(
-    ...args: Parameters<typeof readFileSync>
+	...args: Parameters<typeof readFileSync>
 ): Record<string, unknown> {
-    const data = readFileSync(...args).toString()
-    try {
-        return JSON.parse(data)
-    } catch {
-        return {}
-    }
+	const data = readFileSync(...args).toString()
+	try {
+		return JSON.parse(data)
+	} catch {
+		return {}
+	}
 }
 
 /**
@@ -39,12 +39,12 @@ export function readJSON(
  * @param args.options - options
  */
 export function writeJSON(
-    file: PathOrFileDescriptor,
-    data: Record<string, unknown> | Parameters<typeof writeFileSync>[1],
-    options?: WriteFileOptions
+	file: PathOrFileDescriptor,
+	data: Record<string, unknown> | Parameters<typeof writeFileSync>[1],
+	options?: WriteFileOptions
 ): void {
-    if (typeof data === 'object') {
-        data = (data && JSON.stringify(data, null, 4)) || ''
-    }
-    writeFileSync(file, data, options)
+	if (typeof data === 'object') {
+		data = (data && JSON.stringify(data, null, 4)) || ''
+	}
+	writeFileSync(file, data, options)
 }

@@ -1,47 +1,48 @@
 {
-    "name": "@jssj/request",
-    "description": "jssj request module",
-    "version": "1.0.0-alpha.8",
-    "exports": {
-        ".": {
-            "import": "./index.mjs",
-            "require": "./index.cjs",
-            "types": "./index.d.ts"
-        },
-        "./*": "./*"
-    },
-    "main": "./index.cjs",
-    "module": "./index.mjs",
-    "types": "./index.d.ts",
-    "scripts": {},
-    "directories": {
-        "es": "es",
-        "lib": "lib",
-        "src": "src",
-        "typings": "typings"
-    },
-    "dependencies": {
-        "js-cool": "^2.3.2",
-        "qs": "^6.10.3"
-    },
-    "devDependencies": {
-        "@jssj/utils": "workspace:*"
-    },
-    "sideEffects": false,
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/saqqdy/jssj.git",
-        "directory": "packages/request"
-    },
-    "keywords": [
-        "jssj",
-        "git",
-        "tool"
-    ],
-    "author": "saqqdy<https://github.com/saqqdy>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/saqqdy/jssj/issues"
-    },
-    "homepage": "https://github.com/saqqdy/jssj/tree/master/packages/request#readme"
+	"name": "@jssj/request",
+	"description": "jssj request module",
+	"version": "1.0.0-alpha.8",
+	"main": "./lib/index.cjs",
+	"module": "./lib/index.mjs",
+	"types": "./lib/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./lib/index.mjs",
+			"require": "./lib/index.cjs",
+			"types": "./lib/index.d.ts"
+		},
+		"./*": "./*"
+	},
+	"scripts": {},
+	"directories": {
+		"es": "es",
+		"lib": "lib",
+		"src": "src",
+		"typings": "typings"
+	},
+	"dependencies": {
+		"@jssj/utils": "workspace:*",
+		"js-cool": "^2.5.0",
+		"qs": "^6.10.3"
+	},
+	"devDependencies": {
+		"@types/qs": "^6.9.7"
+	},
+	"sideEffects": false,
+	"keywords": [
+		"jssj",
+		"git",
+		"tool"
+	],
+	"license": "MIT",
+	"author": "saqqdy<https://github.com/saqqdy>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/saqqdy/jssj.git",
+		"directory": "packages/request"
+	},
+	"bugs": {
+		"url": "https://github.com/saqqdy/jssj/issues"
+	},
+	"homepage": "https://github.com/saqqdy/jssj/tree/master/packages/request#readme"
 }

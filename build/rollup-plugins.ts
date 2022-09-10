@@ -1,4 +1,4 @@
-import { resolve, normalize } from 'path'
+import { normalize, resolve } from 'path'
 import { promises, readFileSync } from 'fs'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import esbuild from 'rollup-plugin-esbuild'
@@ -11,42 +11,42 @@ import type { OutputOptions, Plugin, RollupOptions } from 'rollup'
 import type { Options as ESBuildOptions } from 'rollup-plugin-esbuild'
 
 export const esbuildPlugin: Plugin = esbuild({
-    target: 'es2017',
-    minify: false // 避免\u005c被转码
+	target: 'es2017',
+	minify: false // 避免\u005c被转码
 })
 export const dtsPlugin: Plugin = dts()
 export const resolvePlugin: Plugin = nodeResolve({
-    // Use the `package.json` "browser" field
-    extensions: ['.mjs', '.js', '.ts'],
-    preferBuiltins: true
+	// Use the `package.json` "browser" field
+	extensions: ['.mjs', '.js', '.ts'],
+	preferBuiltins: true
 })
 export const visualPlugin: Plugin = visualizer()
 export const shebangPlugin: Plugin = shebang({
-    shebang: '#!/usr/bin/env node',
-    skipBackslash: true // 跳过\u005c 反斜杠
+	shebang: '#!/usr/bin/env node',
+	skipBackslash: true // 跳过\u005c 反斜杠
 })
 export const esbuildMinify = (options: ESBuildOptions) => {
-    const { renderChunk } = esbuild(options)
-    return {
-        name: 'esbuild-minifer',
-        renderChunk
-    }
+	const { renderChunk } = esbuild(options)
+	return {
+		name: 'esbuild-minifer',
+		renderChunk
+	}
 }
 export const minifyBanner = options => {
-    return {
-        name: 'replace-plugin',
-        renderChunk(code) {
-            return `${options.banner}\n${code}`
-        }
-    }
+	return {
+		name: 'replace-plugin',
+		renderChunk(code) {
+			return `${options.banner}\n${code}`
+		}
+	}
 }
 export const injectJssjCore: Plugin = {
-    name: 'inject-jssj-core',
-    renderChunk(code) {
-        const JSSJ_CORE_IIFE = readFileSync(
-            require.resolve('@jssj/core/lib/index.iife.js'),
-            'utf-8'
-        )
-        return `${JSSJ_CORE_IIFE};\n;${code}`
-    }
+	name: 'inject-jssj-core',
+	renderChunk(code) {
+		const JSSJ_CORE_IIFE = readFileSync(
+			require.resolve('@jssj/core/lib/index.iife.js'),
+			'utf-8'
+		)
+		return `${JSSJ_CORE_IIFE};\n;${code}`
+	}
 }

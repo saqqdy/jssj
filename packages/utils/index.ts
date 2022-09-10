@@ -1,3 +1,3 @@
 module.exports = function echoName(name: unknown) {
-    console.log(name)
+	console.log(name)
 }

@@ -1,8 +1,8 @@
-import { readFileSync } from 'fs';
+import { readFileSync } from 'fs'
 
 /**
  * 读取json文件内容
- * 
+ *
  * @example
  * ```ts
  * import { readJSON } from '@jssj/node'
@@ -11,15 +11,15 @@ import { readFileSync } from 'fs';
  * @param args - Parameters<typeof readFileSync>
  * @param args.path - Path to file
  * @param args.options - options
- * @returns result - json | null
-*/
-export function readJSON(...args: Parameters<typeof readFileSync>): Object | null {
-    const data = readFileSync(...args).toString();
-    try {
-        return JSON.parse(data)
-    } catch {
-        return null
-    }
+ * @returns result - json | {}
+ */
+export function readJSON(
+	...args: Parameters<typeof readFileSync>
+): Record<string, unknown> {
+	const data = readFileSync(...args).toString()
+	try {
+		return JSON.parse(data)
+	} catch {
+		return {}
+	}
 }
-
-export default readJSON

@@ -2,6 +2,7 @@
 	"name": "@jssj/monorepo",
 	"description": "jssj",
 	"version": "1.0.0-alpha.9",
+    "packageManager": "pnpm@7.11.0",
 	"main": "index.js",
 	"scripts": {
 		"lib": "sh scripts/lib.sh",

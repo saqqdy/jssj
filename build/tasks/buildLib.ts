@@ -31,9 +31,9 @@ export async function buildLib() {
 	const externals = [
 		'js-cool',
 		'@jssj/core',
-		'@jssj/docs',
-		'@jssj/utils',
-		'@jssj/request'
+		'@jssj/node',
+		'@jssj/request',
+		'@jssj/utils'
 	]
 	const builds = pkgs.map(
 		async ({
@@ -106,7 +106,7 @@ export async function buildLib() {
 							PACKAGE,
 							name,
 							'lib',
-							fn.replace(/\.ts$/, '.js')
+							fn.replace(/\.ts$/, '.cjs')
 						),
 						exports: exportType,
 						banner,

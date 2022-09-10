@@ -1,5 +1,5 @@
 /*!
- * @jssj/request v1.0.0-alpha.8
+ * @jssj/request v1.0.0-alpha.11
  * jssj request module
  * (c) 2021-2022 saqqdy<https://github.com/saqqdy> 
  * Released under the MIT License.

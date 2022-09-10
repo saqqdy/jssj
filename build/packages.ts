@@ -1,29 +1,29 @@
 import type { PackageManifest } from './types'
 
 export const packages: PackageManifest[] = [
-	// {
-	//     name: 'node',
-	// 	pkgName: '@jssj/node',
-	//     buildTask: 'lib',
-	//     iife: false,
-	//     cjs: true,
-	//     mjs: true,
-	//     dts: true,
-	//     submodules: true,
-	//     output: 'lib',
-	//     display: 'js utils for nodejs'
-	// },
-	// {
-	//     name: 'utils',
-	// 	pkgName: '@jssj/utils',
-	//     buildTask: 'lib',
-	//     iife: false,
-	//     cjs: true,
-	//     mjs: true,
-	//     dts: true,
-	//     output: 'lib',
-	//     display: 'Shared utilities'
-	// },
+	{
+		name: 'node',
+		pkgName: '@jssj/node',
+		buildTask: 'lib',
+		iife: false,
+		cjs: true,
+		mjs: true,
+		dts: true,
+		submodules: true,
+		output: 'lib',
+		display: 'js utils for nodejs'
+	},
+	{
+		name: 'utils',
+		pkgName: '@jssj/utils',
+		buildTask: 'lib',
+		iife: false,
+		cjs: true,
+		mjs: true,
+		dts: true,
+		output: 'lib',
+		display: 'Shared utilities'
+	},
 	// {
 	//     name: 'docs',
 	//     display: 'Integration wrappers for utility libraries',
@@ -44,9 +44,11 @@ export const packages: PackageManifest[] = [
 		// manualImport: true,
 		// addon: true,
 		iife: false,
-		// cjs: false,
-		submodules: true,
-		output: 'dist',
+		cjs: true,
+		mjs: true,
+		dts: true,
+		// submodules: true,
+		output: 'lib',
 		// target: 'node14',
 		external: ['@jssj/core']
 		// globals: {

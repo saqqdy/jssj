@@ -1,4 +1,4 @@
-import { OutgoingHttpHeaders } from 'http';
+import { OutgoingHttpHeaders } from 'node:http';
 
 interface RequestOptionsType {
     error?: boolean;

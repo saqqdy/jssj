@@ -1,7 +1,7 @@
 {
 	"name": "@jssj/request",
 	"description": "jssj request module",
-	"version": "1.0.0-alpha.11",
+	"version": "1.0.0-alpha.12",
 	"main": "./lib/index.cjs",
 	"module": "./lib/index.mjs",
 	"types": "./lib/index.d.ts",

@@ -28,7 +28,7 @@ export default series(
 	// 	wrapDisplayName('copy-lib:json,sh', copyLibFile)
 	// ),
 	parallel(
-		wrapDisplayName('build:lib', buildLib),
+		wrapDisplayName('build:lib', buildLib)
 		// wrapDisplayName('build:app', buildApp),
 		// wrapDisplayName('build:docs', buildDocs)
 	),

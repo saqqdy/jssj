@@ -26,7 +26,7 @@ export const packages: PackageManifest[] = [
 	// },
 	// {
 	//     name: 'docs',
-	//     display: 'Docs',
+	//     display: 'Integration wrappers for utility libraries',
 	//     description: 'Integration wrappers for utility libraries',
 	//     addon: true,
 	//     submodules: true,
@@ -39,8 +39,7 @@ export const packages: PackageManifest[] = [
 		name: 'request',
 		pkgName: '@jssj/request',
 		buildTask: 'lib',
-		display: 'Request',
-		description: 'jssj request module',
+		display: 'jssj request module',
 		author: 'saqqdy<https://github.com/saqqdy>',
 		// manualImport: true,
 		// addon: true,

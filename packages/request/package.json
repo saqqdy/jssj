@@ -1,7 +1,7 @@
 {
 	"name": "@jssj/request",
 	"description": "jssj request module",
-	"version": "1.0.0-alpha.8",
+	"version": "1.0.0-alpha.9",
 	"main": "./lib/index.cjs",
 	"module": "./lib/index.mjs",
 	"types": "./lib/index.d.ts",
@@ -42,7 +42,7 @@
 		"directory": "packages/request"
 	},
 	"bugs": {
-		"url": "https://github.com/saqqdy/jssj/issues"
+		"url": "https://github.com/saqqdy/gitmars/issues"
 	},
 	"homepage": "https://github.com/saqqdy/jssj/tree/master/packages/request#readme"
 }

@@ -80,7 +80,7 @@ export async function buildLib() {
 					onlyFiles: true
 				})
 			)
-console.log(fileList)
+
 			for (const fn of fileList) {
 				const input = resolve(PACKAGE, name, 'src', fn)
 
@@ -248,6 +248,6 @@ export default series(
 	wrapDisplayName('clean:dirs', cleanDirs),
 	// wrapDisplayName('gen:version', genVersion),
 	parallel(wrapDisplayName('build:lib', buildLib)),
-	parallel(wrapDisplayName('madge:lib', madgeLib)),
+	parallel(wrapDisplayName('madge:lib', madgeLib))
 	// parallel(wrapDisplayName('copy:json,sh', copyLibFile))
 )

@@ -13,7 +13,7 @@ async function updatePackageJSON() {
 		packageJSON.description = display || packageJSON.description
 		packageJSON.author = author || 'saqqdy <https://github.com/saqqdy>'
 		packageJSON.bugs = {
-			url: 'https://github.com/saqqdy/gitmars/issues'
+			url: 'https://github.com/saqqdy/jssj/issues'
 		}
 		packageJSON.homepage =
 			name === 'core'

@@ -17,6 +17,13 @@
 		"./*": "./*"
 	},
 	"scripts": {},
+	"files": [
+		"lib",
+		"es",
+		"dist",
+		"typings",
+		"*.d.ts"
+	],
 	"directories": {
 		"bin": "bin",
 		"es": "es",

@@ -1,7 +1,7 @@
 {
 	"name": "@jssj/monorepo",
 	"description": "jssj",
-	"version": "1.0.0-alpha.13",
+	"version": "1.0.0-alpha.14",
 	"packageManager": "pnpm@7.11.0",
 	"main": "index.js",
 	"files": [

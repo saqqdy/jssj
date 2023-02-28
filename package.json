@@ -61,7 +61,7 @@
 		"rollup-plugin-add-banner": "^1.1.0",
 		"rollup-plugin-dts": "^4.2.2",
 		"rollup-plugin-esbuild": "^5.0.0",
-		"rollup-plugin-filesize": "^9.1.2",
+		"rollup-plugin-filesize": "^10.0.0",
 		"rollup-plugin-node-externals": "^5.0.0",
 		"rollup-plugin-replace-shebang": "^1.2.0",
 		"rollup-plugin-visualizer": "^5.8.1",
